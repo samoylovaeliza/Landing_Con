@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700&display=swap&subset=cyrillic-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background: #fafafa;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  transition: color 600ms ease;
+}
+
+img {max-width: 100%}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 20px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 5%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > .logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+header > .nav {
+  position: relative;
+  left: -50px;
+}
+
+header > .nav a {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin: 20px 15px;
+  display: inline-block;
+  color: #fff;
+  transition: all 600ms ease;
+}
+
+header > .nav a:hover,
+header > .menu:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+header > .menu {
+  cursor: pointer;
+  color: #fff;
+  font-size: 23px;
+  transition: all 600ms ease;
+  display: none;
+}
+.fixed {
+  display: flex;
+  position: sticky;
+  top: -70px;
+  left: 0;
+}
+
+#hidden-menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  background: #fff;
+  z-index: 10;
+  text-align: center;
+}
+#hidden-menu .close {
+  font-size: 40px;
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 600ms ease;
+}
+
+#hidden-menu .close:hover {color: #ccc}
+
+#hidden-menu h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#hidden-menu ul {list-style: none}
+#hidden-menu ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#hidden-menu ul li a {color: #333}
+#hidden-menu ul li a:hover {color: #ccc}
+
+#hidden {
+  display: none;
+}
+
+.full-page,
+.bg-fixed {
+  height: 500px;
+  background: url('../img/main-bg.png') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #ff9999;
+  text-align: center;
+  color: #fff;
+}
+
+
+.full-page h1 {
+  padding-top: 200px;
+  font-size: 45px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.full-page h3 {
+  margin: 20px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500px;
+  color: #fff;
+}
+
+.full-page button,
+.bg-fixed button {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+  background: #588c7e;
+  color: #fff;
+  font-weight: 500px;
+  transition: background 600ms ease;
+}
+
+.full-page button i,
+.bg-fixed button i{
+  margin-left: 5px;
+  transition: margin 600ms sease;
+}
+
+.full-page button:hover,
+.bg-fixed button:hover {
+  background: #70bbb1;
+}
+
+.full-page button:hover i,
+.bg-fixed button:hover i {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.features {
+  display: block;
+  /*width: 60%;*/
+  text-align: center;
+  /*margin-left: 20%;*/
+}
+
+.features > div h2 {
+  padding: 20px;
+  font-size: 45px;
+}
+.features > div img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.features > div h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #454545;
+}
+
+.features > div p {font-weight: 200}
+
+.agenda {
+  display: block;
+  text-align: center;
+}
+.agenda > div h2 {
+  padding: 20px;
+  font-size: 45px;
+}
+
+.agenda > div table {
+  width: 100%;
+  font-size: 30px;
+  border-collapse: collapse;
+}
+
+.agenda > div table th {
+  border-bottom: thin solid;
+  border-color: #454545;
+  padding: 20px 0;
+}
+.agenda > div table th:last-child{
+  width: 70%;
+}
+.first-item {
+  position: relative;
+}
+.first-item:after {
+  content: '|';
+  font-weight: 200;
+  display: inline;
+  position: relative;
+  left: 20%;
+  top: 15%;
+}
+.bg-fixed {
+  height: 300px;
+}
+.bg-fixed h3 {
+  font-size: 25px;
+  padding-top: 130px;
+  margin-bottom: 20px;
+}
+
+.bg-fixed input {
+  padding: 14px 20px;
+  width: 300px;
+  font-size: 14px;
+  border: 0;
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+footer {
+  width: 90%;
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > ul {list-style: none}
+footer > ul li {
+  font-size: 14px;
+}
+footer .up-btn,
+footer .social div {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  color: #3b3b3b;
+  transition: transform 600ms ease;
+}
+
+footer .up-btn:hover,
+footer .social div:hover {
+  transform: translateY(-10px);
+}
+
+footer .social div {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+
+@media screen and (max-width: 991px) {
+   header .nav {
+     display: none;
+   }
+
+   header .menu {
+     display: block;
+   }
+}
